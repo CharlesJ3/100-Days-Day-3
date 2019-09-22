@@ -1,0 +1,58 @@
+@keyframes scaleUpMinor {
+  0%  {
+    transform: scale(.95);
+  }
+
+  20% {
+    transform: scale(.90);
+  }
+
+  40% {
+    transform: scale(.85);
+  }
+
+  60% {
+    transform: scale(.90);
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+
+  100%  {
+    transform: scale(1.0);
+  }
+}
+
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#battleArea {
+  /* background-color: black; */
+}
+
+#hammerPushOut {
+  position: absolute;
+  top: 80%;
+  width: 98%;
+  height: 19%;
+}
+
+#hammerPush {
+  border: 3px solid white;
+  background-color: red;
+  height: 52%;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5em;
+  color: white;
+  text-shadow: 7px 3px 1px black;
+  font-family: fantasy;
+  padding: 3%;
+  cursor: pointer;
+  animation: scaleUpMinor 2s linear infinite;
+}
